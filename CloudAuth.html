@@ -21,6 +21,7 @@
             function redirect() {
                 var code = GetURLParameter('code');
                 window.location.href = "xlamp://?code=" + code;
+                document.getElementById('code_header').innerHTML = code;
             }
 
             //window.onload = redirect;
@@ -34,6 +35,8 @@
         <h1>Success</h1>
 
         <button onclick="redirect()">Click here to go to the app if u aren't redirected automatically.</button>
+
+        <h2 id="code_header"></h2>
 
     </body>
 </html>
