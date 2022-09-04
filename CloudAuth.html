@@ -21,7 +21,7 @@
             function redirect() {
                 var code = GetURLParameter('code');
                 window.location.href = "xlamp://?code=" + code;
-                document.getElementById('code_header').innerHTML = code;
+                document.getElementById('code_header').innerHTML = "If your a re not redirected back to the application please enter the following code manually: " + code;
             }
 
             //window.onload = redirect;
@@ -33,8 +33,6 @@
     <!-- BODY -->
     <body onload="redirect()">
         <h1>Success</h1>
-
-        <button onclick="redirect()">Click here to go to the app if u aren't redirected automatically.</button>
 
         <h2 id="code_header"></h2>
 
