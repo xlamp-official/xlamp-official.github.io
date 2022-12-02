@@ -20,7 +20,7 @@
 
             function redirect() {
                 var code = GetURLParameter('code');
-                window.location.href = "xlamp://?code=" + code;
+                window.location.href = "xlamp://?cloud_auth=true&code=" + code;
                 document.getElementById('code_header').innerHTML = "If your a re not redirected back to the application please enter the following code manually: " + code;
             }
 
